@@ -10,7 +10,7 @@ module Nextapp
     
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins 'localhost:3000' # ここにはクライアントのオリジンを指定します
+        origins 'localhost:3000', 'https://technical-task-henna.vercel.app/'# ここにはクライアントのオリジンを指定します
 
         resource '*',
           headers: :any,
